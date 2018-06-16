@@ -459,11 +459,11 @@ input {
   background-color: #23527c;
 }
 
-.margen {
+:host ::ng-deep .extra-margin {
 	height: 50px;
 }
 
-.borde-separador {
+:host ::ng-deep .borde-separador {
 	border-left: 1px dotted #337ab7;
 }
 
