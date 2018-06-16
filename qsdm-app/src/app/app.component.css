@@ -18,15 +18,15 @@
   	font-weight: normal;
 }
 
-::-webkit-scrollbar {
+:host ::ng-deep ::-webkit-scrollbar {
     width: 4px;
 }
 
-::-webkit-scrollbar-track {
+:host ::ng-deep ::-webkit-scrollbar-track {
     border-radius: 4px;
 }
 
-::-webkit-scrollbar-thumb {
+:host ::ng-deep ::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: #337ab7;
 }
