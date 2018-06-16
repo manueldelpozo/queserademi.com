@@ -1,0 +1,45 @@
+:host {
+    font-family: Roboto;
+}
+
+.sprite {
+	background:url(assets/images/sprite.png) no-repeat;
+	height: 300px;
+	background-position-x: 0;
+	margin: 0 10px;
+}
+
+#sprite-alfonso {
+	background-position-y: 0;
+	float: left;
+}
+
+#sprite-manu {
+	background-position-y: -353px;
+	float: right;
+}
+
+#sprite-nacho {
+	background-position-y: -725px;
+	float: left;
+}
+
+#sprite-maria {
+	background-position-y: -1097px;
+	float: left;
+}
+
+#sprite-mabel {
+	background-position-y: -1457px;
+	float: left;
+}
+
+.speech {
+	overflow: auto;
+    height: 185px;
+    text-align: left;
+}
+
+address {
+	font-size: 12px;
+}
