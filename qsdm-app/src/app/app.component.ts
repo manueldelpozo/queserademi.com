@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
+import { QsdmServiceService } from './qsdm-service.service';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +10,11 @@ import 'rxjs/add/operator/map';
 })
 
 export class AppComponent implements OnInit {
-  title = 'queserademi';
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+
   }
 
 }

@@ -1,0 +1,15 @@
+.header h4 {
+    font-size: 20px;
+    line-height: 1.5;
+    max-height: 60px;
+}
+
+.header h1 {
+    font-size: 25px;
+}
+
+.img-responsive {
+	display: inline-block;
+	max-width: 100px;
+	max-height: 100px;
+}

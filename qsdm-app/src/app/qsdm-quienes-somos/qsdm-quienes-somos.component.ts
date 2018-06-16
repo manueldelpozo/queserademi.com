@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QsdmServiceService } from '../qsdm-service.service';
 
 @Component({
   selector: 'app-qsdm-quienes-somos',
@@ -7,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QsdmQuienesSomosComponent implements OnInit {
 
-  constructor() { }
+  constructor(private headerTitleService: QsdmServiceService) { }
 
   ngOnInit() {
+    this.headerTitleService.setTitle('Conoce al equipo detrás de <br><strong>queserademi</strong>');
   }
-
 }

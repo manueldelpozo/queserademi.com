@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QsdmServiceService } from '../qsdm-service.service';
 
 @Component({
   selector: 'app-qsdm-colabora',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QsdmColaboraComponent implements OnInit {
 
-  constructor() { }
+  constructor(private headerTitleService: QsdmServiceService) { }
 
   ngOnInit() {
+    this.headerTitleService.setTitle('colabora con queserademi, <br>de forma anónima y <br><strong>en sólo 2 minutos...');
   }
 
 }
