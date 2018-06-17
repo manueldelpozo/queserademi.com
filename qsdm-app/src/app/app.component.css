@@ -58,19 +58,7 @@ button, a {
     -webkit-touch-callout: none; /* disable the IOS popup when long-press on a link */
 }
 
-app-qsdm-footer {
-	position: fixed;
-	z-index: 99;
-	bottom: 0;
-	width: 100%;
-	/* Set the fixed height of the footer here */
-	height: 50px;
-	background-color: #FFFFFF;
 
-	-webkit-box-shadow: 0 0 40px #444;
-	-moz-box-shadow: 0 0 40px #444;
-	box-shadow: 0 0 40px #444;
-}
 
 /*#preloader {
 	position: fixed;
