@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { QsdmHeaderComponent } from './qsdm-header/qsdm-header.component';
@@ -25,7 +26,8 @@ import { QsdmServiceService } from './qsdm-service.service';
   imports: [
     BrowserModule,
     HttpModule,
-    ROUTING
+    ROUTING,
+    BrowserAnimationsModule
   ],
   providers: [QsdmServiceService],
   bootstrap: [AppComponent]
