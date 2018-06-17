@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DeviceDetectorModule } from 'ngx-device-detector';
 
 import { AppComponent } from './app.component';
 import { QsdmHeaderComponent } from './qsdm-header/qsdm-header.component';
@@ -27,7 +28,8 @@ import { QsdmServiceService } from './qsdm-service.service';
     BrowserModule,
     HttpModule,
     ROUTING,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DeviceDetectorModule.forRoot()
   ],
   providers: [QsdmServiceService],
   bootstrap: [AppComponent]
