@@ -29,22 +29,21 @@ import { Router, Event, NavigationEnd } from '@angular/router';
 })
 export class QsdmFooterComponent implements OnInit {
 
-  state = 'close';
+  state = '';
 
   isMobile = false;
 
   constructor(private deviceService: DeviceDetectorService, private router: Router) {
     const deviceInfo = this.deviceService.getDeviceInfo();
     this.isMobile = (deviceInfo.device !== 'unknown');
-    if (this.isMobile) {
-      this.state = 'closeMobile';
-    }
   }
 
   ngOnInit() {
+    this.closeMenu();
+
     this.router.events.subscribe((event: Event) => {
       if (event instanceof NavigationEnd) {
-        this.state = 'closeMobile';
+        this.closeMenu();
       }
     });
   }
@@ -55,7 +54,10 @@ export class QsdmFooterComponent implements OnInit {
     } else {
       this.state = this.state === 'close' ? 'open' : 'close';
     }
-    console.log(this.state)
+  }
+
+  closeMenu() {
+    this.state = this.isMobile ? 'closeMobile' : 'close';
   }
 
 }
