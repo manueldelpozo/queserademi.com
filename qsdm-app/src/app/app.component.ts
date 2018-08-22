@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { QsdmServiceService } from './qsdm-service.service';
+import { setTheme } from 'ngx-bootstrap/utils';
+
 
 @Component({
   selector: 'app-root',
@@ -11,7 +13,9 @@ import { QsdmServiceService } from './qsdm-service.service';
 
 export class AppComponent implements OnInit {
 
-  constructor() {}
+  constructor() {
+    setTheme('bs3');
+  }
 
   ngOnInit() {
 

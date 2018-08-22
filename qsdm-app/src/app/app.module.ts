@@ -1,9 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DeviceDetectorModule } from 'ngx-device-detector';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+import {MatButtonModule, MatCheckboxModule, MatAutocompleteModule, MatInputModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { QsdmHeaderComponent } from './qsdm-header/qsdm-header.component';
@@ -14,6 +18,7 @@ import { QsdmColaboraComponent } from './qsdm-colabora/qsdm-colabora.component';
 
 import { ROUTING } from './app.routing';
 import { QsdmServiceService } from './qsdm-service.service';
+import { QsdmInputAutofillComponent } from './qsdm-input-autofill/qsdm-input-autofill.component';
 
 @NgModule({
   declarations: [
@@ -22,14 +27,23 @@ import { QsdmServiceService } from './qsdm-service.service';
     QsdmFooterComponent,
     QsdmQuienesSomosComponent,
     QsdmColaboraComponent,
-    QsdmMainpageComponent
+    QsdmMainpageComponent,
+    QsdmInputAutofillComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     HttpModule,
     ROUTING,
     BrowserAnimationsModule,
-    DeviceDetectorModule.forRoot()
+    MatButtonModule,
+    MatCheckboxModule,
+    MatAutocompleteModule,
+    MatInputModule,
+    DeviceDetectorModule.forRoot(),
+    NgbModule.forRoot(),
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [QsdmServiceService],
   bootstrap: [AppComponent]
