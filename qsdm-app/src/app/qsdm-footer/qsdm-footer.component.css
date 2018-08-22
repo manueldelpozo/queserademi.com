@@ -78,9 +78,10 @@ ul.share-buttons li {
 
 #mobile-footer {
     display: flex;
-	align-items: baseline;
+	align-items: flex-start;
 	margin: 0;
-	padding-top: 10px;
+    padding-top: 10px;
+    padding-left: 0;
 }
 
 #mobile-footer .share-buttons a {
@@ -101,7 +102,7 @@ ul.share-buttons li {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width: 500px) and (orientation:portrait) {
     footer {
-		background-color: rgba(230, 230, 230, 0.96);
+        background-color: rgba(230, 230, 230, 0.96);
 	}
 
 	footer div {
@@ -110,7 +111,8 @@ ul.share-buttons li {
 
 	footer .glyphicon-menu-hamburger {
 		top: 0 !important;
-		outline: none !important;
+        outline: none !important;
+        font-size: 30px !important;
 	}
 
 	.mobile-menu {
@@ -124,7 +126,7 @@ ul.share-buttons li {
 
 @media only screen and (max-device-width: 768px) and (orientation:landscape) {
     footer {
-		background-color: rgba(230, 230, 230, 0.96);
+        background-color: rgba(230, 230, 230, 0.96);
 	}
 
 	footer div {
@@ -132,7 +134,8 @@ ul.share-buttons li {
 	}
 
 	footer .glyphicon-menu-hamburger {
-		top: 0 !important;
+        top: 0 !important;
+        font-size: 30px !important;
 	}
 
 	.mobile-menu {

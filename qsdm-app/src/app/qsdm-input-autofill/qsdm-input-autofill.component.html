@@ -1,0 +1,17 @@
+<!-- <ng-template #rt let-r="result" let-t="term">
+  {{ r.name}}
+</ng-template>
+<input id="typeahead-config" type="text" class="form-control" 
+        [(ngModel)]="model" 
+        [ngbTypeahead]="search" 
+        [resultTemplate]="rt"
+        [inputFormatter]="formatter"/> -->
+
+<mat-form-field class="full-width">
+  <input type="text" placeholder="Busca una profesion" aria-label="Number" matInput (ngModelChange)="search" [formControl]="myControl" [matAutocomplete]="auto">
+  <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+      {{option}}
+    </mat-option>
+  </mat-autocomplete>
+</mat-form-field>
